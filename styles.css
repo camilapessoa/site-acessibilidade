@@ -52,7 +52,6 @@ section {
 }
 
 
-/* aula 3 */
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
