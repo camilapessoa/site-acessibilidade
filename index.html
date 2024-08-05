@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Tropicália</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,20 +23,22 @@
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
-        </nav>
-        <div id="acessibilidade" class="menu-acessibilidade" aria-label="Menu de acessibilidade">
-            <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold" aria-expanded="false"
-                aria-controls="opcoes-acessibilidade">Acessibilidade</button>
-            <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista  " role="group"
-                aria-label="Opções de acessibilidade">
-                <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar fonte">A +</button>
-                <button id="reinicia-fonte" class="btn btn-primary fw-bold"
-                    aria-label="Restaurar tamanho da fonte">A</button>
-                <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir fonte">A -</button>
-                <button id="alterna-contraste" class="btn btn-dark" aria-label="Ativar/desativar alto contraste"><i
-                        class="bi bi-shadows"></i></button>
+
+            <div id="acessibilidade" class="menu-acessibilidade" aria-label="Menu de acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold" aria-expanded="false"
+                    aria-controls="opcoes-acessibilidade">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista  " role="group"
+                    aria-label="Opções de acessibilidade">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar fonte">A +</button>
+                    <button id="reinicia-fonte" class="btn btn-primary fw-bold"
+                        aria-label="Restaurar tamanho da fonte">A</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir fonte">A -</button>
+                    <button id="alterna-contraste" class="btn btn-dark" aria-label="Ativar/desativar alto contraste"><i
+                            class="bi bi-shadows"></i></button>
+                </div>
             </div>
-        </div>
+        </nav>
+       
     </header>
 
 
@@ -55,12 +56,12 @@
                         conhecer!</a>
                 </div>
 
-                <img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png" alt="Imagem decorativa"
+                <img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png" alt="Imagem decorativa" title="Os mutantes - CC0 Domínio público / Acervo Arquivo Nacional"
                     class="img-fluid animate__animated animate__rotateInDownRight animate__delay-1s img-inicio">
             </div>
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+        <section id="tropicalia"  tabindex="0" aria-label="Seção explicativa sobre a Tropicália" class="my-5 pt-6 secao-tropicalia">
             <div class="container d-flex align-items-center ">
                 <div class="col-4 d-flex justify-content-center ">
                     <img src="img/image (1).png" class="rounded-pill" width="273" height="331"
@@ -77,7 +78,7 @@
             </div>
         </section>
 
-        <section id="galeria">
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
             <h2 class="text-center pt-5">Galeria</h2>
             <div class="container p-3 mt-3 fundo-galeria ">
 
@@ -141,7 +142,6 @@
         <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.0/scrollreveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.0/scrollreveal.js"></script>
     <script src="script.js"></script>
 
